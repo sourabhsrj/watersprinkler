@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00CED1"
+    android:background="#0faDa1"
     tools:context=".HomeActivity">
 
     <TextView
@@ -12,12 +12,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Sprinkler App"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="Water Sprinkler"
         android:textColor="@color/white"
         android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_margin="12dp"
-        />
+        android:textStyle="bold" />
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,6 +29,7 @@
         android:layout_margin="20dp"
         >
         <androidx.cardview.widget.CardView
+            android:id="@+id/sprinkler1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="0"
@@ -37,6 +40,7 @@
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
             android:elevation="8dp"
+            android:onClick="sprinklerData1"
             >
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -48,11 +52,12 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/image"
+                    android:src="@drawable/sprink"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:text="Sprinkler1"
                     android:textStyle="bold"
                     android:textAlignment="center"
@@ -61,6 +66,7 @@
             
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
+            android:id="@+id/sprinkler2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="0"
@@ -71,6 +77,7 @@
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
             android:elevation="8dp"
+            android:onClick="sprinklerData2"
             >
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -82,11 +89,12 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/image"
+                    android:src="@drawable/sprink"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:text="Sprinkler2"
                     android:textStyle="bold"
                     android:textAlignment="center"
@@ -95,6 +103,7 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
+            android:id="@+id/sprinkler3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="1"
@@ -105,6 +114,7 @@
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
             android:elevation="8dp"
+            android:onClick="sprinklerData3"
             >
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -116,11 +126,12 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/image"
+                    android:src="@drawable/sprink"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:text="Sprinkler3"
                     android:textStyle="bold"
                     android:textAlignment="center"
@@ -129,6 +140,7 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
+            android:id="@+id/sprinkler4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="1"
@@ -139,6 +151,7 @@
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
             android:elevation="8dp"
+            android:onClick="sprinklerData4"
             >
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -150,11 +163,12 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/image"
+                    android:src="@drawable/sprink"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:text="Sprinkler4"
                     android:textStyle="bold"
                     android:textAlignment="center"
@@ -163,6 +177,7 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
+            android:id="@+id/sprinkler5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="2"
@@ -173,6 +188,7 @@
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
             android:elevation="8dp"
+            android:onClick="sprinklerData5"
             >
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -184,11 +200,12 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/image"
+                    android:src="@drawable/sprink"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:text="Sprinkler5"
                     android:textStyle="bold"
                     android:textAlignment="center"
@@ -197,6 +214,7 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
+            android:id="@+id/sprinkler6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="2"
@@ -207,6 +225,7 @@
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
             android:elevation="8dp"
+            android:onClick="sprinklerData6"
             >
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -218,11 +237,12 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/image"
+                    android:src="@drawable/sprink"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:text="Sprinkler6"
                     android:textStyle="bold"
                     android:textAlignment="center"
@@ -231,6 +251,7 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
+            android:id="@+id/sprinkler7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="3"
@@ -241,6 +262,7 @@
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
             android:elevation="8dp"
+            android:onClick="sprinklerData7"
             >
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -252,11 +274,12 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/image"
+                    android:src="@drawable/sprink"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:text="Sprinkler7"
                     android:textStyle="bold"
                     android:textAlignment="center"
@@ -265,6 +288,7 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
+            android:id="@+id/sprinkler8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="3"
@@ -275,6 +299,7 @@
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
             android:elevation="8dp"
+            android:onClick="sprinklerData8"
             >
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -286,11 +311,12 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/image"
+                    android:src="@drawable/sprink"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:text="Sprinkler8"
                     android:textStyle="bold"
                     android:textAlignment="center"
